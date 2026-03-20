@@ -9,3 +9,6 @@ def read_root():
 @app.get("/teste")
 async def funcaoteste():
     return {"mensagem": "TESTE com FastAPI!"}
+@app.get("/status")
+def status():
+    return {"status": "online"}
