@@ -12,4 +12,4 @@ async def funcao_teste():
 
 @app.get("/status")
 def status():
-    return {"status": "online"}
+    return {"mensagem": "API de monitoramento online"}
