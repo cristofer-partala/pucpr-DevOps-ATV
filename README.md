@@ -9,7 +9,11 @@ Este projeto foi desenvolvido como parte da disciplina de DevOps, com o objetivo
 - Python
 - FastAPI
 - Uvicorn
+##  Documentação da API
 
+A API possui documentação automática gerada pelo FastAPI:
+
+http://127.0.0.1:8000/docs
 ## ▶Como executar
 
 ```bash
