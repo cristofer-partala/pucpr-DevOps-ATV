@@ -2,9 +2,9 @@ from fastapi import FastAPI
 
 app = FastAPI(title="API de Monitoramento de Rede")
 
-@app.get("/")
-def read_root():
-    return {"mensagem": "API de monitoramento de rede em execução"}
+@app.get("/info")
+def info():
+    return {"app": "monitoramento", "versao": "1.0"}
 
 @app.get("/teste")
 async def funcao_teste():
