@@ -12,3 +12,5 @@ async def funcaoteste():
 @app.get("/status")
 def status():
     return {"status": "online"}
+def test_exemplo():
+    assert 1 == 1
