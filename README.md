@@ -1,5 +1,17 @@
 # pucpr-DevOps-ATV
 
-Durante o desenvolvimento do projeto, optei por utilizar o FastAPI como framework principal. Essa escolha foi feita para manter alinhamento com o conteúdo apresentado na disciplina, além de permitir a construção de uma API simples e eficiente em Python.
+# API de Monitoramento de Rede
 
-O uso do FastAPI também facilita a implementação de testes e a integração com ferramentas de CI/CD, o que será explorado nas próximas etapas do projeto.
+##  Descrição
+Este projeto foi desenvolvido como parte da disciplina de DevOps, com o objetivo de construir uma API simples para simular monitoramento de rede, utilizando FastAPI.
+
+## Tecnologias utilizadas
+- Python
+- FastAPI
+- Uvicorn
+
+## ▶Como executar
+
+```bash
+pip install -r requirements.txt
+uvicorn main:app --reload

@@ -1,16 +1,15 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(title="API de Monitoramento de Rede")
 
 @app.get("/")
 def read_root():
-    return {"mensagem": "Olá, mundo com FastAPI!"}
+    return {"mensagem": "API de monitoramento de rede em execução"}
 
 @app.get("/teste")
-async def funcaoteste():
-    return {"mensagem": "TESTE com FastAPI!"}
+async def funcao_teste():
+    return {"mensagem": "Rota de teste funcionando"}
+
 @app.get("/status")
 def status():
     return {"status": "online"}
-def test_exemplo():
-    assert 1 == 1
