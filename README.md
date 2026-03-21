@@ -9,7 +9,7 @@ Este projeto foi desenvolvido como parte da disciplina de DevOps, com o objetivo
 - Python
 - FastAPI
 - Uvicorn
-##  Documentação da API
+##  Documentação da API.
 
 A API possui documentação automática gerada pelo FastAPI:
 
