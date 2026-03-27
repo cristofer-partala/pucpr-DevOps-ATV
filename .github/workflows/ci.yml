@@ -1,0 +1,33 @@
+name: CI - API Monitoramento
+
+on:
+  push:
+    branches: [ "feature/ci" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Instalar dependências
+      run: |
+        pip install -r requirements.txt
+
+    - name: Rodar testes
+      run: |
+        python -m unittest discover
+
+    - name: Python Lint Code Scanning Action
+      uses: advanced-security/python-lint-code-scanning-action@v1.1.3
+      with:
+        linter: pylint
