@@ -26,6 +26,20 @@ Em seguida, criei uma segunda branch para configuração da entrega contínua (C
 
 Após a configuração de cada etapa, foram realizadas pull requests para integração com a branch principal, garantindo que todos os workflows fossem executados com sucesso antes do merge.
 
+# Docker
+
+Nesta etapa, realizei a containerização da aplicação utilizando Docker.
+
+Foi criado um Dockerfile configurado com a imagem base Python, instalação das dependências e execução da API com Uvicorn.
+
+Para executar a aplicação via Docker:
+
+docker build -t api-monitoramento .
+docker run -d -p 8000:8000 api-monitoramento
+
+Após a execução, a API pode ser acessada em:
+http://127.0.0.1:8000/docs
+
 
 
 Próximos passos
